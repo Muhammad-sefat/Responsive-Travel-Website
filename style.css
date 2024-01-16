@@ -389,6 +389,83 @@ main{
     width: 100%;
 }
 
+/* form-section start */
+
+.form-section{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 30px;
+}
+.form-section-text{
+    width: 38%;
+    border: 1px solid #FF5400;
+    padding: 20px;
+    border-radius: 16px;
+}
+.form-section-text h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #131318;
+    margin: 20px 0;
+}
+.form-section-text p{
+    font-size: 16px;
+    color: #5a5a5d;
+    margin: 0 30px 20px 0;
+}
+.form-section-text input{
+    display: block;
+    padding: 10px 12px;
+    width: 90%;
+    font-size: 16px;
+    color: #7b7979;
+    font-weight: 400;
+    margin: 20px 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+}
+.form-section-text input[type="button"]{
+    background-color: #FF5400;
+    color: #fff;
+}
+.form-section-img{
+    width: 58%;
+}
+.form-section-img div{
+    position: relative;
+}
+.color-box{
+    width: 250px;
+    height: 100px;
+    background-color: #FF5400;
+    color: #fff;
+    border-radius: 16px;
+    position: absolute;
+    right: 10px;
+    top: 62%;
+    transform: rotate(-18deg)
+    
+}
+.color-box p{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.color-box h2{
+    text-align: center;
+    padding: 12px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.form-section-img div img{
+    width: 100%;
+}
 
 /* responsive for mobile device */
 @media screen and (max-width: 600px) {
@@ -483,11 +560,12 @@ main{
     }
     .about-section p{
         width: 90%;
+        line-height: normal;
     }
-    .about-box{
+    .about-box,.form-section{
         flex-direction: column;
     }
-    .box1,.box2,.box3,.about-more-img,.about-more-text{
+    .box1,.box2,.box3,.about-more-img,.about-more-text,.form-section-img,.form-section-text{
         width: 100%;
     }
     .about-more{
@@ -499,5 +577,14 @@ main{
     }
     .about-more-img div span h3{
         font-size: 16px;
+    }
+    .color-box{
+        width: 180px;
+        height: 80px;
+        top: 42%;
+    }
+    .color-box h2{
+        font-size: 18px;
+        padding: 5px 0;
     }
 }
