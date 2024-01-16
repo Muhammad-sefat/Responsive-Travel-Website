@@ -155,7 +155,81 @@ main{
 .popular-section-img img{
     width: 100%;
 }
+/* popular places start */
 
+.popular-places{
+    width: 100%;
+    margin: 30px auto;
+}
+.popular-places h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 20px auto;
+    padding-top: 30px;
+}
+.popular-places p{
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    font-size: 400;
+    margin: 20px auto;
+    line-height: 26px;
+    width: 600px;
+}
+.popular-places-img{
+    padding-top: 30px;
+    width: 100%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "img1 img1 img1 img1 img1 img1 img2 img2 img2 img2 img2 img2"
+    "img3 img3 img3 img3 img4 img4 img4 img4 img4 img5 img5 img5"
+    "img6 img6 img6 img6 img6 img7 img7 img7 img7 img7 img7 img7"
+    ;
+    gap: 20px;
+}
+.popular-places-img div{
+    position: relative;
+}
+.popular-places-img div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.popular-places-img div span h3{
+    font-size: 26px;
+    font-size: 800;
+    color: #fff;
+}
+.popular-places-img div img{
+    width: 100%;
+    height: 100%;
+}
+.img1{
+ grid-area: img1;
+}
+.img2{
+   grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
 
 
 /* responsive for mobile device */
