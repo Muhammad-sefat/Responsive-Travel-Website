@@ -517,6 +517,49 @@ main{
     color: #f44336;
     padding-top: 6px;
 }
+
+/* footer start */
+footer{
+    width: 100%;
+    background-color:  rgba(19, 19, 24, 0.05);
+    height: 500px;
+    margin: 50px 0 10px;
+    text-align: center;
+}
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 10px;
+    gap: 10px;
+}
+.nav-section img{
+    width: 50px;
+}
+.nav-section h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+footer p{
+    width: 600px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin: 10px auto;
+    line-height: 26px;
+    text-align: center;
+}
+ .fa-brands{
+    font-size: 22px;
+    margin: 20px 20px 35px;
+}
+footer h5{
+    margin-top: 80px;
+    font-size: 16px;
+    color: #5a5a5d;
+    font-weight: 400;
+}
+
 /* responsive for mobile device */
 @media screen and (max-width: 600px) {
     .navbar{
@@ -647,6 +690,18 @@ main{
     .feedback-col img{
         margin-left: 0;
         margin-right: 15px;
-        ;
+    }
+    footer p{
+        width: 90%;
+        line-height: 24px;
+    }
+    .nav-section{
+        padding-top: 30px;
+    }
+    .nav-section img{
+        width: 40px;
+    }
+    .nav-section h2{
+        font-size: 24px;
     }
 }
