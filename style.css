@@ -71,7 +71,7 @@ nav h2{
     background-color: rgba(255, 255, 255, 0.30);
     width: 700px;
     height: 80px;
-    margin: 10px auto;
+    margin: 20px auto;
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -85,6 +85,7 @@ nav h2{
     color: #666;
     border: 0;
     width: 150px;
+    background-color: #FFFFFF;
 }
 .banner-div button{
    display: flex;
@@ -102,6 +103,60 @@ nav h2{
    gap: 20px;
    padding: 10px;
 }
+
+/* main section start */
+main{
+    width: 82%;
+    margin: 30px auto;
+}
+/* popular section start */
+.popular-section{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.popular-section-text{
+    width: 48%;
+}
+.popular-section-text h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: #131318;
+    margin: 10px 0;
+}
+.popular-section-text p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    line-height: 26px;
+    margin: 10px 0;
+}
+.popular-section-text ul li{
+    margin-left: 20px;
+    font-size: 16px;
+    color: #666;
+    line-height: 26px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.btn1{
+    background-color: #FF5400;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 12px 14px;
+    margin: 20px 0;
+}
+.popular-section-img{
+    width: 48%;
+    margin-top: 10px;
+}
+.popular-section-img img{
+    width: 100%;
+}
+
+
 
 /* responsive for mobile device */
 @media screen and (max-width: 600px) {
@@ -123,7 +178,7 @@ nav h2{
         margin-right: 20px;
     }
     .banner-section h1{
-        font-size: 22px;
+        font-size: 24px;
         padding-top: 30px;
     }
     .banner-section p{
@@ -135,10 +190,11 @@ nav h2{
     .banner-div{
         flex-direction: column;
         width: 85%;
-        height: 280px;
+        height: 250px;
     }
     .banner-div input,button{
         width: 90%;
+        margin: auto;
     }
     .banner-div button{
         display: flex;
