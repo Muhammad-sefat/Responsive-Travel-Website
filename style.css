@@ -304,6 +304,92 @@ main{
     margin: 20px 20px 0 5px;
 }
 
+/* discount section start*/
+
+.discounts-section{
+    width: 100%;
+    margin: 30px auto;
+}
+.discounts-section h1{
+    font-size: 40px;
+    font-weight: 800;
+    padding-top: 40px;
+    text-align: center;
+}
+.discounts-section p{
+    font-size: 16px;
+    color: #5a5a5d;
+    width: 550px;
+    margin: 20px auto;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* about more start */
+
+.about-more{
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.about-more-text{
+    width: 48%;
+}
+.about-more-text h1{
+    font-size: 40px;
+    font-weight: 800;
+    color: #131318;
+    line-height: 55px;
+    margin: 10px 0;
+    padding-top: 20px;
+}
+.about-more-text p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #5a5a5d;
+    line-height: 26px;
+    margin: 20px 0;
+}
+
+.about-more-text ul{
+    padding: 15px 30px;
+}
+.about-more-text ul li{
+    font-size: 16px;
+    margin: 10px 0;
+    color: #131318;
+    font-weight: 700;
+}
+.about-more-img{
+    padding-top: 20px;
+    width: 48%;
+}
+.about-more-img div{
+    position: relative;
+}
+.about-more-img div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.about-more-img div span h3{
+    color: #fff;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.about-more-img div img{
+    width: 100%;
+}
+
+
 /* responsive for mobile device */
 @media screen and (max-width: 600px) {
     .navbar{
@@ -401,7 +487,17 @@ main{
     .about-box{
         flex-direction: column;
     }
-    .box1,.box2,.box3{
+    .box1,.box2,.box3,.about-more-img,.about-more-text{
         width: 100%;
+    }
+    .about-more{
+        flex-direction: column-reverse;
+    }
+    .about-more-text h1{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .about-more-img div span h3{
+        font-size: 16px;
     }
 }
