@@ -231,6 +231,78 @@ main{
     grid-area: img7;
 }
 
+/* about section start */
+.about-section{
+    width: 100%;
+    margin: 30px auto;
+}
+.about-section h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin: 20px auto;
+    padding-top: 30px;
+    text-align: center;
+}
+.about-section p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    line-height: 26px;
+    margin: 10px auto;
+    text-align: center;
+    width: 550px;
+}
+.about-section-box{
+    width: 100%;
+    margin: 20px auto;
+}
+.about-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.box1{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);   
+    background: rgba(251, 181, 99, 0.05);
+    height: 290px;
+    margin: 20px 0;
+    width: 50%;
+}
+.box2{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    height: 290px;
+    margin: 20px 0;
+    width: 50%;
+}
+.box3{
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    height: 290px;
+    width: 50%;
+    margin: 10px auto;
+}
+.box1 img,.box2 img,.box3 img{
+    width: 64px;
+    height: 65px;
+    margin: 25px 15px 15px;
+}
+.box1 h2,.box2 h2,.box3 h2{
+    font-size: 24px;
+    font-weight: 800;
+    margin: 10px 20px;
+}
+.box1 p,.box2 p,.box3 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #5a5a5d;
+    width: 90%;
+    margin: 20px 20px 0 5px;
+}
 
 /* responsive for mobile device */
 @media screen and (max-width: 600px) {
@@ -319,5 +391,17 @@ main{
     }
     .popular-places-img div span h3{
         font-size: 20px;
+    }
+    .about-section h1{
+        font-size: 24px;
+    }
+    .about-section p{
+        width: 90%;
+    }
+    .about-box{
+        flex-direction: column;
+    }
+    .box1,.box2,.box3{
+        width: 100%;
     }
 }
