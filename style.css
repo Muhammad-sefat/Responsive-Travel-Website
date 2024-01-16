@@ -297,4 +297,27 @@ main{
     .popular-section{
         padding-top: 20px;
     }
+    .popular-places h1{
+        font-size: 25px;
+        padding-top: 15px;
+    }
+    .popular-places p{
+        width: 90%;
+    }
+    .popular-places-img{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7,1fr);
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        ;
+    }
+    .popular-places-img div span h3{
+        font-size: 20px;
+    }
 }
