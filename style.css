@@ -205,4 +205,22 @@ main{
         justify-content: center;
         gap: 50px;
     }
+    .popular-section{
+        flex-direction: column;
+    }
+    .popular-section-img,.popular-section-text{
+        width: 100%;
+    }
+    .popular-section-text h1{
+        font-size: 24px;
+    }
+    .btn1{
+        width: 50%;
+    }
+    main{
+        margin: auto;
+    }
+    .popular-section{
+        padding-top: 20px;
+    }
 }
