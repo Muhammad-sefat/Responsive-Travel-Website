@@ -70,7 +70,7 @@ nav h2{
 .banner-div{
     background-color: rgba(255, 255, 255, 0.30);
     width: 700px;
-    height: 70px;
+    height: 80px;
     margin: 10px auto;
     border-radius: 16px;
     display: flex;
@@ -86,15 +86,67 @@ nav h2{
     border: 0;
     width: 150px;
 }
-.banner-div button i{
-   margin-left: 20px; 
+.banner-div button{
+   display: flex;
+   justify-content: space-between; 
 }
 .btn{
     background-color: #FF5400;
     color: #fff;
     font-size: 16px;
 }
-.btn i{
-    margin-left: 0px;
-    padding-right: 15px;
+.banner-div button.btn{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   gap: 20px;
+   padding: 10px;
+}
+
+/* responsive for mobile device */
+@media screen and (max-width: 600px) {
+    .navbar{
+        width: 100%;
+    }
+    nav h2{
+        font-size: 22px;
+    }
+    nav img{
+        width: 30px;
+    }
+    .navbar ul li a{
+        display: none;
+    }
+    .navbar ul li i{
+        display: block;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .banner-section h1{
+        font-size: 22px;
+        padding-top: 30px;
+    }
+    .banner-section p{
+        font-size: 14px;
+        width: 100%;
+        padding: 10px;
+        line-height: 24px;
+    }
+    .banner-div{
+        flex-direction: column;
+        width: 85%;
+        height: 280px;
+    }
+    .banner-div input,button{
+        width: 90%;
+    }
+    .banner-div button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .btn{
+        justify-content: center;
+        gap: 50px;
+    }
 }
